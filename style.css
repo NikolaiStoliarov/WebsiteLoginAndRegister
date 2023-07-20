@@ -7,6 +7,17 @@
   font-family: 'Rubik', sans-serif;
 }
 
+/* <background>*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(image/background.jpg) no-repeat; 
+  background-size: cover;
+}
+/* </background>*/
+
 /* <Header menu>*/
 header {
   position: fixed;  
@@ -14,7 +25,6 @@ header {
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,9 +32,17 @@ header {
 }
 
 .logo {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.logo-text {
   font-size: 2em;
   color: #E5E5E5;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation a {
