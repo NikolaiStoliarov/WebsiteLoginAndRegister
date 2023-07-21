@@ -16,6 +16,7 @@ a {
   text-decoration: none;
   font-weight: 600;
   margin-left: 2px;
+  transition: color 0.5s ease;
 }
 a::after {
   content: '';
@@ -28,10 +29,14 @@ a::after {
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .5s;
+  transition: transform .5s ease;
 }
 a:hover::after {
   transform: scaleX(1);
+}
+a:active {
+  color: #7bec67;
+  transition: transform .5s ease;
 }
 /*</LinkStyling>*/
 /*<Checkbox>*/
@@ -325,3 +330,11 @@ header {
   margin: 25px 0px 10px;
 }
 /*</Login and Registration menu>*/
+
+/*<JavaScriptCode>*/
+.error-message {
+  margin-bottom: 15px;
+  display: none; 
+  color: #ec6767;
+}
+/*</JavaScriptCode>*/
