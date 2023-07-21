@@ -12,15 +12,23 @@ iconClose.addEventListener('click', ()=> {wrapper.classList.remove('active-popup
 document.getElementById('submitBtn').addEventListener('click', function(event) {
   var checkbox = document.getElementById('myCheckboxIAgree');
   var errorMessage = document.getElementById('error-message');
+  var wrapper = document.querySelector('.wrapper');
   
   if (!checkbox.checked) {
     event.preventDefault(); 
-    errorMessage.style.display = 'block'; 
+    errorMessage.style.display = 'block';
+    wrapper.classList.remove('invalid');
+    void wrapper.offsetWidth; // Trigger a reflow, flushing the CSS changes
+    wrapper.classList.add('invalid'); 
   } else {
     errorMessage.style.display = 'none';
+    wrapper.classList.remove('invalid');
   }
 });
 
 window.onload = function() { // Hide the error message when the page loads
   document.getElementById('error-message').style.display = 'none';
 };
+
+
+
