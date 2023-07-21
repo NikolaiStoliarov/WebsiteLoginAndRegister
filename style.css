@@ -119,7 +119,12 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: height .2s;
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
 }
 
 .wrapper.active {
@@ -253,6 +258,13 @@ header {
   font-size: 1em;
   color: #0E0F11;
   font-weight: 500;
+  transition: .5s;
+}
+
+.btn:hover {
+  border: 2px solid #E5E5E5;
+  background: transparent;
+  color: #E5E5E5;
 }
 
 .login-register {
