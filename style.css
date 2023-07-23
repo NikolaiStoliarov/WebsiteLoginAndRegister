@@ -10,7 +10,7 @@
   font-family: 'Rubik', sans-serif;
 }
 /*<InputAutofill>*/
-input:-webkit-autofill, autofill
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
