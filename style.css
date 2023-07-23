@@ -150,11 +150,16 @@ header {
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .5s;
+  transition: transform .5s ease;
 }
 
 .navigation a:hover::after {
   transform: scaleX(1);
+}
+
+.navigation a:active {
+  color: #7bec67;
+  transition: transform .5s ease;
 }
 
 .navigation .btnLogin-popup {
