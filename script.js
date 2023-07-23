@@ -4,6 +4,9 @@ const registerLink = document.querySelector('.register-link');
 const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
 
+//<fix bag with email>
+//</fix bag with email>
+
 registerLink.addEventListener('click', ()=> {wrapper.classList.add('active');});
 loginLink.addEventListener('click', ()=> {wrapper.classList.remove('active');});
 btnPopup.addEventListener('click', ()=> {wrapper.classList.add('active-popup');});
@@ -25,6 +28,9 @@ document.getElementById('submitBtn').addEventListener('click', function(event) {
     wrapper.classList.remove('invalid');
   }
 });
+
+//<fix bag with email>
+//</fix bag with email>
 
 window.onload = function() { // Hide the error message when the page loads
   document.getElementById('error-message').style.display = 'none';
